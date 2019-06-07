@@ -38,7 +38,7 @@ Diagram of Process:
 - ![Diagram](Images/Diagram.png)
 
 Sketch of Interface:
-- ![Sketch](Images/Sketch.png)
+- ![Sketch](Images/IMG_7795.jpeg)
 
 Examples of charts:
 
