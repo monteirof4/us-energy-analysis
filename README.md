@@ -34,8 +34,15 @@ https://www.patrick-wied.at/static/heatmapjs/
 https://www.d3-graph-gallery.com/streamgraph.html
 https://www.mapbox.com/
 
+Diagram of Process:
+- ![Diagram](Images/Diagram.png)
+
+Sketch of Interface:
+- ![Sketch](Images/IMG_7795.JPG)
+
 Examples of charts:
-![Line Graph](Images/LineGraph.png)
-![Heatmap](Images/Heatmap.jpeg)
-![Streamgraph](Images/Streamgraph.png)
+
+- ![Line Graph](Images/LineGraph.png)
+- ![Heatmap](Images/Heatmap.jpeg)
+- ![Streamgraph](Images/Streamgraph.png)
 
