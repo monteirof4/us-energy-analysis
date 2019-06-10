@@ -56,6 +56,7 @@ AL,1964,3395,Thousand
 AL,1963,3358,Thousand
 AL,1962,3323,Thousand
 AL,1961,3316,Thousand
+AL,1960,3274,Thousand
 AK,2017,740,Thousand
 AK,2016,742,Thousand
 AK,2015,738,Thousand
@@ -113,6 +114,7 @@ AK,1964,263,Thousand
 AK,1963,256,Thousand
 AK,1962,246,Thousand
 AK,1961,238,Thousand
+AK,1960,229,Thousand
 AZ,2017,7049,Thousand
 AZ,2016,6945,Thousand
 AZ,2015,6834,Thousand
@@ -170,6 +172,7 @@ AZ,1964,1556,Thousand
 AZ,1963,1521,Thousand
 AZ,1962,1471,Thousand
 AZ,1961,1407,Thousand
+AZ,1960,1321,Thousand
 AR,2017,3003,Thousand
 AR,2016,2990,Thousand
 AR,2015,2978,Thousand
@@ -227,6 +230,7 @@ AR,1964,1897,Thousand
 AR,1963,1875,Thousand
 AR,1962,1853,Thousand
 AR,1961,1806,Thousand
+AR,1960,1789,Thousand
 CA,2017,39399,Thousand
 CA,2016,39209,Thousand
 CA,2015,38953,Thousand
@@ -284,6 +288,7 @@ CA,1964,18151,Thousand
 CA,1963,17668,Thousand
 CA,1962,17072,Thousand
 CA,1961,16497,Thousand
+CA,1960,15870,Thousand
 CO,2017,5616,Thousand
 CO,2016,5541,Thousand
 CO,2015,5452,Thousand
@@ -341,6 +346,7 @@ CO,1964,1970,Thousand
 CO,1963,1936,Thousand
 CO,1962,1899,Thousand
 CO,1961,1844,Thousand
+CO,1960,1769,Thousand
 CT,2017,3574,Thousand
 CT,2016,3579,Thousand
 CT,2015,3588,Thousand
@@ -398,6 +404,7 @@ CT,1964,2798,Thousand
 CT,1963,2727,Thousand
 CT,1962,2647,Thousand
 CT,1961,2586,Thousand
+CT,1960,2544,Thousand
 DE,2017,957,Thousand
 DE,2016,949,Thousand
 DE,2015,941,Thousand
@@ -455,6 +462,7 @@ DE,1964,497,Thousand
 DE,1963,483,Thousand
 DE,1962,469,Thousand
 DE,1961,461,Thousand
+DE,1960,449,Thousand
 DC,2017,696,Thousand
 DC,2016,687,Thousand
 DC,2015,675,Thousand
@@ -512,6 +520,7 @@ DC,1964,798,Thousand
 DC,1963,798,Thousand
 DC,1962,788,Thousand
 DC,1961,778,Thousand
+DC,1960,765,Thousand
 FL,2017,20977,Thousand
 FL,2016,20630,Thousand
 FL,2015,20224,Thousand
@@ -569,6 +578,7 @@ FL,1964,5781,Thousand
 FL,1963,5628,Thousand
 FL,1962,5458,Thousand
 FL,1961,5243,Thousand
+FL,1960,5004,Thousand
 GA,2017,10413,Thousand
 GA,2016,10305,Thousand
 GA,2015,10181,Thousand
@@ -626,6 +636,7 @@ GA,1964,4258,Thousand
 GA,1963,4172,Thousand
 GA,1962,4086,Thousand
 GA,1961,4015,Thousand
+GA,1960,3956,Thousand
 HI,2017,1424,Thousand
 HI,2016,1428,Thousand
 HI,2015,1422,Thousand
@@ -683,6 +694,7 @@ HI,1964,700,Thousand
 HI,1963,682,Thousand
 HI,1962,684,Thousand
 HI,1961,659,Thousand
+HI,1960,642,Thousand
 ID,2017,1719,Thousand
 ID,2016,1683,Thousand
 ID,2015,1652,Thousand
@@ -740,6 +752,7 @@ ID,1964,680,Thousand
 ID,1963,683,Thousand
 ID,1962,692,Thousand
 ID,1961,684,Thousand
+ID,1960,671,Thousand
 IL,2017,12786,Thousand
 IL,2016,12827,Thousand
 IL,2015,12864,Thousand
@@ -797,6 +810,7 @@ IL,1964,10580,Thousand
 IL,1963,10402,Thousand
 IL,1962,10280,Thousand
 IL,1961,10130,Thousand
+IL,1960,10086,Thousand
 IN,2017,6660,Thousand
 IN,2016,6633,Thousand
 IN,2015,6608,Thousand
@@ -854,6 +868,7 @@ IN,1964,4856,Thousand
 IN,1963,4799,Thousand
 IN,1962,4736,Thousand
 IN,1961,4730,Thousand
+IN,1960,4674,Thousand
 IA,2017,3144,Thousand
 IA,2016,3132,Thousand
 IA,2015,3121,Thousand
@@ -911,6 +926,7 @@ IA,1964,2746,Thousand
 IA,1963,2747,Thousand
 IA,1962,2750,Thousand
 IA,1961,2756,Thousand
+IA,1960,2756,Thousand
 KS,2017,2911,Thousand
 KS,2016,2911,Thousand
 KS,2015,2910,Thousand
@@ -968,6 +984,7 @@ KS,1964,2209,Thousand
 KS,1963,2217,Thousand
 KS,1962,2231,Thousand
 KS,1961,2215,Thousand
+KS,1960,2183,Thousand
 KY,2017,4454,Thousand
 KY,2016,4438,Thousand
 KY,2015,4426,Thousand
@@ -1025,6 +1042,7 @@ KY,1964,3129,Thousand
 KY,1963,3096,Thousand
 KY,1962,3079,Thousand
 KY,1961,3054,Thousand
+KY,1960,3041,Thousand
 LA,2017,4671,Thousand
 LA,2016,4678,Thousand
 LA,2015,4665,Thousand
@@ -1082,6 +1100,7 @@ LA,1964,3446,Thousand
 LA,1963,3377,Thousand
 LA,1962,3345,Thousand
 LA,1961,3287,Thousand
+LA,1960,3260,Thousand
 ME,2017,1335,Thousand
 ME,2016,1331,Thousand
 ME,2015,1328,Thousand
@@ -1139,6 +1158,7 @@ ME,1964,993,Thousand
 ME,1963,993,Thousand
 ME,1962,994,Thousand
 ME,1961,995,Thousand
+ME,1960,975,Thousand
 MD,2017,6025,Thousand
 MD,2016,6005,Thousand
 MD,2015,5987,Thousand
@@ -1196,6 +1216,7 @@ MD,1964,3492,Thousand
 MD,1963,3386,Thousand
 MD,1962,3263,Thousand
 MD,1961,3176,Thousand
+MD,1960,3113,Thousand
 MA,2017,6863,Thousand
 MA,2016,6826,Thousand
 MA,2015,6796,Thousand
@@ -1253,6 +1274,7 @@ MA,1964,5448,Thousand
 MA,1963,5344,Thousand
 MA,1962,5263,Thousand
 MA,1961,5219,Thousand
+MA,1960,5160,Thousand
 MI,2017,9976,Thousand
 MI,2016,9952,Thousand
 MI,2015,9933,Thousand
@@ -1310,6 +1332,7 @@ MI,1964,8187,Thousand
 MI,1963,8058,Thousand
 MI,1962,7933,Thousand
 MI,1961,7893,Thousand
+MI,1960,7834,Thousand
 MN,2017,5568,Thousand
 MN,2016,5523,Thousand
 MN,2015,5483,Thousand
@@ -1367,6 +1390,7 @@ MN,1964,3558,Thousand
 MN,1963,3531,Thousand
 MN,1962,3513,Thousand
 MN,1961,3470,Thousand
+MN,1960,3425,Thousand
 MS,2017,2990,Thousand
 MS,2016,2988,Thousand
 MS,2015,2989,Thousand
@@ -1424,6 +1448,7 @@ MS,1964,2241,Thousand
 MS,1963,2244,Thousand
 MS,1962,2243,Thousand
 MS,1961,2206,Thousand
+MS,1960,2182,Thousand
 MO,2017,6109,Thousand
 MO,2016,6087,Thousand
 MO,2015,6072,Thousand
@@ -1481,6 +1506,7 @@ MO,1964,4442,Thousand
 MO,1963,4392,Thousand
 MO,1962,4357,Thousand
 MO,1961,4349,Thousand
+MO,1960,4326,Thousand
 MT,2017,1053,Thousand
 MT,2016,1041,Thousand
 MT,2015,1031,Thousand
@@ -1538,6 +1564,7 @@ MT,1964,706,Thousand
 MT,1963,703,Thousand
 MT,1962,698,Thousand
 MT,1961,696,Thousand
+MT,1960,679,Thousand
 NE,2017,1918,Thousand
 NE,2016,1906,Thousand
 NE,2015,1892,Thousand
@@ -1595,6 +1622,7 @@ NE,1964,1482,Thousand
 NE,1963,1476,Thousand
 NE,1962,1464,Thousand
 NE,1961,1446,Thousand
+NE,1960,1417,Thousand
 NV,2017,2972,Thousand
 NV,2016,2920,Thousand
 NV,2015,2869,Thousand
@@ -1652,6 +1680,7 @@ NV,1964,426,Thousand
 NV,1963,397,Thousand
 NV,1962,352,Thousand
 NV,1961,315,Thousand
+NV,1960,291,Thousand
 NH,2017,1350,Thousand
 NH,2016,1342,Thousand
 NH,2015,1336,Thousand
@@ -1709,6 +1738,7 @@ NH,1964,663,Thousand
 NH,1963,649,Thousand
 NH,1962,632,Thousand
 NH,1961,618,Thousand
+NH,1960,609,Thousand
 NJ,2017,8889,Thousand
 NJ,2016,8875,Thousand
 NJ,2015,8871,Thousand
@@ -1766,6 +1796,7 @@ NJ,1964,6660,Thousand
 NJ,1963,6531,Thousand
 NJ,1962,6376,Thousand
 NJ,1961,6265,Thousand
+NJ,1960,6103,Thousand
 NM,2017,2093,Thousand
 NM,2016,2093,Thousand
 NM,2015,2090,Thousand
@@ -1823,6 +1854,7 @@ NM,1964,1006,Thousand
 NM,1963,989,Thousand
 NM,1962,979,Thousand
 NM,1961,965,Thousand
+NM,1960,954,Thousand
 NY,2017,19591,Thousand
 NY,2016,19642,Thousand
 NY,2015,19661,Thousand
@@ -1880,6 +1912,7 @@ NY,1964,17589,Thousand
 NY,1963,17461,Thousand
 NY,1962,17301,Thousand
 NY,1961,17061,Thousand
+NY,1960,16838,Thousand
 NC,2017,10271,Thousand
 NC,2016,10157,Thousand
 NC,2015,10033,Thousand
@@ -1937,6 +1970,7 @@ NC,1964,4802,Thousand
 NC,1963,4742,Thousand
 NC,1962,4707,Thousand
 NC,1961,4663,Thousand
+NC,1960,4573,Thousand
 ND,2017,755,Thousand
 ND,2016,754,Thousand
 ND,2015,754,Thousand
@@ -1994,6 +2028,7 @@ ND,1964,649,Thousand
 ND,1963,644,Thousand
 ND,1962,637,Thousand
 ND,1961,641,Thousand
+ND,1960,634,Thousand
 OH,2017,11664,Thousand
 OH,2016,11635,Thousand
 OH,2015,11618,Thousand
@@ -2051,6 +2086,7 @@ OH,1964,10080,Thousand
 OH,1963,9986,Thousand
 OH,1962,9929,Thousand
 OH,1961,9854,Thousand
+OH,1960,9734,Thousand
 OK,2017,3933,Thousand
 OK,2016,3927,Thousand
 OK,2015,3910,Thousand
@@ -2108,6 +2144,7 @@ OK,1964,2446,Thousand
 OK,1963,2439,Thousand
 OK,1962,2427,Thousand
 OK,1961,2380,Thousand
+OK,1960,2336,Thousand
 OR,2017,4147,Thousand
 OR,2016,4091,Thousand
 OR,2015,4017,Thousand
@@ -2165,6 +2202,7 @@ OR,1964,1888,Thousand
 OR,1963,1853,Thousand
 OR,1962,1818,Thousand
 OR,1961,1787,Thousand
+OR,1960,1772,Thousand
 PA,2017,12790,Thousand
 PA,2016,12784,Thousand
 PA,2015,12786,Thousand
@@ -2222,6 +2260,7 @@ PA,1964,11519,Thousand
 PA,1963,11424,Thousand
 PA,1962,11355,Thousand
 PA,1961,11392,Thousand
+PA,1960,11329,Thousand
 RI,2017,1056,Thousand
 RI,2016,1057,Thousand
 RI,2015,1056,Thousand
@@ -2279,6 +2318,7 @@ RI,1964,885,Thousand
 RI,1963,876,Thousand
 RI,1962,871,Thousand
 RI,1961,858,Thousand
+RI,1960,855,Thousand
 SC,2017,5021,Thousand
 SC,2016,4958,Thousand
 SC,2015,4892,Thousand
@@ -2336,6 +2376,7 @@ SC,1964,2475,Thousand
 SC,1963,2460,Thousand
 SC,1962,2423,Thousand
 SC,1961,2409,Thousand
+SC,1960,2392,Thousand
 SD,2017,873,Thousand
 SD,2016,863,Thousand
 SD,2015,854,Thousand
@@ -2393,6 +2434,7 @@ SD,1964,701,Thousand
 SD,1963,708,Thousand
 SD,1962,705,Thousand
 SD,1961,693,Thousand
+SD,1960,683,Thousand
 TN,2017,6709,Thousand
 TN,2016,6645,Thousand
 TN,2015,6591,Thousand
@@ -2450,6 +2492,7 @@ TN,1964,3771,Thousand
 TN,1963,3718,Thousand
 TN,1962,3673,Thousand
 TN,1961,3622,Thousand
+TN,1960,3575,Thousand
 TX,2017,28323,Thousand
 TX,2016,27937,Thousand
 TX,2015,27487,Thousand
@@ -2507,63 +2550,7 @@ TX,1964,10270,Thousand
 TX,1963,10159,Thousand
 TX,1962,10053,Thousand
 TX,1961,9820,Thousand
-US,2017,325147,Thousand
-US,2016,323071,Thousand
-US,2015,320743,Thousand
-US,2014,318386,Thousand
-US,2013,316058,Thousand
-US,2012,313874,Thousand
-US,2011,311580,Thousand
-US,2010,309326,Thousand
-US,2009,306772,Thousand
-US,2008,304094,Thousand
-US,2007,301231,Thousand
-US,2006,298380,Thousand
-US,2005,295517,Thousand
-US,2004,292805,Thousand
-US,2003,290108,Thousand
-US,2002,287625,Thousand
-US,2001,284969,Thousand
-US,2000,282162,Thousand
-US,1999,279040,Thousand
-US,1998,275854,Thousand
-US,1997,272647,Thousand
-US,1996,269394,Thousand
-US,1995,266278,Thousand
-US,1994,263126,Thousand
-US,1993,259919,Thousand
-US,1992,256514,Thousand
-US,1991,252981,Thousand
-US,1990,249623,Thousand
-US,1989,246819,Thousand
-US,1988,244499,Thousand
-US,1987,242289,Thousand
-US,1986,240133,Thousand
-US,1985,237924,Thousand
-US,1984,235825,Thousand
-US,1983,233792,Thousand
-US,1982,231664,Thousand
-US,1981,229466,Thousand
-US,1980,227225,Thousand
-US,1979,225055,Thousand
-US,1978,222585,Thousand
-US,1977,220239,Thousand
-US,1976,218035,Thousand
-US,1975,215973,Thousand
-US,1974,213854,Thousand
-US,1973,211909,Thousand
-US,1972,209896,Thousand
-US,1971,207661,Thousand
-US,1970,205052,Thousand
-US,1969,202677,Thousand
-US,1968,200706,Thousand
-US,1967,198712,Thousand
-US,1966,196560,Thousand
-US,1965,194303,Thousand
-US,1964,191889,Thousand
-US,1963,189242,Thousand
-US,1962,186538,Thousand
-US,1961,183691,Thousand
+TX,1960,9624,Thousand
 UT,2017,3103,Thousand
 UT,2016,3043,Thousand
 UT,2015,2982,Thousand
@@ -2621,6 +2608,7 @@ UT,1964,978,Thousand
 UT,1963,974,Thousand
 UT,1962,958,Thousand
 UT,1961,936,Thousand
+UT,1960,900,Thousand
 VT,2017,625,Thousand
 VT,2016,624,Thousand
 VT,2015,625,Thousand
@@ -2678,6 +2666,7 @@ VT,1964,399,Thousand
 VT,1963,397,Thousand
 VT,1962,393,Thousand
 VT,1961,390,Thousand
+VT,1960,389,Thousand
 VA,2017,8465,Thousand
 VA,2016,8411,Thousand
 VA,2015,8363,Thousand
@@ -2735,6 +2724,7 @@ VA,1964,4357,Thousand
 VA,1963,4276,Thousand
 VA,1962,4180,Thousand
 VA,1961,4095,Thousand
+VA,1960,3986,Thousand
 WA,2017,7425,Thousand
 WA,2016,7295,Thousand
 WA,2015,7164,Thousand
@@ -2792,6 +2782,7 @@ WA,1964,2961,Thousand
 WA,1963,2955,Thousand
 WA,1962,2942,Thousand
 WA,1961,2882,Thousand
+WA,1960,2855,Thousand
 WV,2017,1817,Thousand
 WV,2016,1831,Thousand
 WV,2015,1842,Thousand
@@ -2849,6 +2840,7 @@ WV,1964,1797,Thousand
 WV,1963,1796,Thousand
 WV,1962,1809,Thousand
 WV,1961,1828,Thousand
+WV,1960,1853,Thousand
 WI,2017,5792,Thousand
 WI,2016,5773,Thousand
 WI,2015,5761,Thousand
@@ -2906,6 +2898,7 @@ WI,1964,4165,Thousand
 WI,1963,4112,Thousand
 WI,1962,4049,Thousand
 WI,1961,4009,Thousand
+WI,1960,3962,Thousand
 WY,2017,579,Thousand
 WY,2016,584,Thousand
 WY,2015,586,Thousand
