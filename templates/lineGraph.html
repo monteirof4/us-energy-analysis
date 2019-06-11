@@ -14,13 +14,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <!-- CSS styleSheet link -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <!-- Section: Navigation -->
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" style="background-color: darkgreen;" href="index.html">Home</a>
+            <a class="navbar-brand" style="background-color: darkgreen;" href="/">Home</a>
             <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,9 +32,9 @@
                         aria-haspopup="true" aria-expanded="false">Visualizations
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="streamGraph.html">Stream Graphs</a>
-                        <a class="dropdown-item" href="lineGraph.html">Line Graphs</a>
-                        <a class="dropdown-item" href="heatMaps.html">Heat Maps</a>
+                        <a class="dropdown-item" href="streamgraph">Stream Graphs</a>
+                        <a class="dropdown-item" href="linegraph">Line Graphs</a>
+                        <a class="dropdown-item" href="heatmap">Heat Maps</a>
                     </div>
                 </li>
             </ul>
@@ -48,10 +48,25 @@
         <h1 class="display-4">US Energy & Emissions Analysis</h1>
     </div>
     <div class="row">
-        <div class="col-lg-7 cold-md-12">
+        <div class="col-lg-2 cold-md-12">
             <!-- Left Side Box -->
-            <div class="lineGraph"></div>
+            <div class="dropdown">
+                <h5>Select State:</h5>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
         </div>
+        <div class="col-lg-5 col-md-12">
+            <div id="priceGraph">
+            </div>
+            <!-- Right Side Box -->
+        </div>
+        <div class="col-lg-5 col-md-12">
+            <div id="emissionGraph">
+            </div>
+            <!-- Right Side Box -->
+        </div>
+    </div>
+    <div class="row">
         <div class="col-lg-5 col-md-12">
             <!-- Right Side Box -->
             <div class="box">
@@ -60,17 +75,17 @@
                 <div class="container">
                     <div class="row" style="padding-bottom: 30px;">
                         <div class="col-4">
-                            <a href="heatMaps.html">
+                            <a href="heatmap">
                                 <img class="panel" src="assets/img/Heatmap.jpeg" alt="Heatmap">
                             </a>
                         </div>
                         <div class="col-4">
-                            <a href="streamGraph.html">
+                            <a href="streamgraph">
                                 <img class="panel" src="assets/img/Streamgraph.png" alt="Streamgraph">
                             </a>
                         </div>
                         <div class="col-4">
-                                <a href="lineGraph.html">
+                                <a href="linegraph">
                                     <img class="panel" src="assets/img/LineGraph.png" alt="LineGraph">
                                 </a>
                         </div>
@@ -85,6 +100,10 @@
     <footer>
         <div class="footer">2019 RutgersCodingBootcamp - Fernando, Feng, Omar, and Mike I.</div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/linegraph.js') }}"></script>
 
 </body>
 </html>

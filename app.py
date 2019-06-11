@@ -16,7 +16,7 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///assets/db/us_energy.sqlite"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///static/db/us_energy.sqlite"
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
@@ -34,6 +34,21 @@ state_coordinates = Base.classes.state_coordinates
 def index():
    """Return the homepage."""
    return render_template("index.html")
+
+@app.route("/linegraph")
+def linegraph():
+   """Line chart page."""
+   return render_template("lineGraph.html")
+
+@app.route("/streamgraph")
+def streamgraph():
+   """Stream chart page."""
+   return render_template("streamGraph.html")
+
+@app.route("/heatmap")
+def heatmap():
+   """Heatmap chart page."""
+   return render_template("heatMaps.html")
 
 
 @app.route("/states")
