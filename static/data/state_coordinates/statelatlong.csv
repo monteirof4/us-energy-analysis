@@ -1,4 +1,5 @@
 State,Latitude,Longitude,City
+US,37.0902,-95.7129,United States
 AL,32.6010112,-86.6807365,Alabama
 AK,61.3025006,-158.7750198,Alaska
 AZ,34.1682185,-111.930907,Arizona
@@ -50,4 +51,3 @@ WA,38.8993487,-77.0145665,Washington
 WV,38.9201705,-80.1816905,West Virginia
 WI,44.7862968,-89.8267049,Wisconsin
 WY,43.000325,-107.5545669,Wyoming
-US,37.0902,-95.7129,United States
