@@ -54,14 +54,29 @@ def heatmap():
 @app.route("/states")
 def names():
    """Return a list of states abbreviation."""
+   sel = [
+       state_coordinates.Abbreviation,
+       state_coordinates.Latitude,
+       state_coordinates.Longitude,
+       state_coordinates.US_State
+   ]
 
-   # Use Pandas to perform the sql query
-   stmt = db.session.query(state_coordinates).statement
-   df = pd.read_sql_query(stmt, db.session.bind)
+   results = db.session.query(*sel).all()
+
+   states_list = []
+
+   for result in results:
+       states_data = {}
+       states_data["Abbreviation"] = result[0]
+       states_data["Latitude"] = str(result[1])
+       states_data["Longitude"] = str(result[2])
+       states_data["US_State"] = result[3]
+       
+       states_list.append(states_data)
 
    # Return a list of the column names (sample names)
-   print(list(df.Abbreviation))
-   return jsonify(list(df.Abbreviation))
+   print(states_list)
+   return jsonify(states_list)
 
 
 @app.route("/energy_data/<state>")
@@ -94,8 +109,69 @@ def energy_data(state):
        energy_data["Total_renewable_energy"] = str(result[6])
        energy_data_list.append(energy_data)
 
-   print(energy_data_list)
+   #print(energy_data_list)
    return jsonify(energy_data_list)
+
+@app.route("/energy_data_year/<year>")
+def energy_data_year(year):
+   """Return the MetaData for a given sample."""
+   sel = [
+       Energy_Data.State,
+       Energy_Data.Year,
+       Energy_Data.Total_co2_emission,
+       Energy_Data.Average_Price,
+       Energy_Data.Average_resident_population,
+       Energy_Data.Total_energy,
+       Energy_Data.Total_renewable_energy,
+   ]
+
+   results = db.session.query(*sel).filter(Energy_Data.Year == year).all()
+   #print(results)
+
+   # Create a dictionary entry for each row of metadata information
+   energy_data_list = []
+
+   for result in results:
+       energy_data = {}
+       energy_data["State"] = result[0]
+       energy_data["Year"] = result[1]
+       energy_data["Total_co2_emission"] = str(result[2])
+       energy_data["Average_Price"] = str(result[3])
+       energy_data["Average_resident_population"] = str(result[4])
+       energy_data["Total_energy"] = str(result[5])
+       energy_data["Total_renewable_energy"] = str(result[6])
+       energy_data_list.append(energy_data)
+
+   #print(energy_data_list)
+   return jsonify(energy_data_list)
+
+@app.route("/energy_data_metric/<metric>")
+def energy_data_metric(metric):
+   """Return the MetaData for a given sample."""
+   console.log(metric);
+   sel = [
+       Energy_Data.State,
+       Energy_Data.Year,
+       Energy_Data[f"{metric}"]
+   ]
+
+   results = db.session.query(*sel).all()
+   #print(results)
+
+   # Create a dictionary entry for each row of metadata information
+   energy_data_list = []
+
+   for result in results:
+       energy_data = {}
+       energy_data["State"] = result[0]
+       energy_data["Year"] = result[1]
+       energy_data[f"{metric}"] = str(result[2])
+
+       energy_data_list.append(energy_data)
+
+   # print(energy_data_list)
+   return jsonify(energy_data_list)
+
 
 if __name__ == "__main__":
    app.run()
