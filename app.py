@@ -148,16 +148,16 @@ def energy_data_year(year):
 @app.route("/energy_data_metric/<metric>")
 def energy_data_metric(metric):
    """Return the MetaData for a given sample."""
-   console.log(metric);
+   year = 2016
+
    sel = [
-       Energy_Data.State,
-       Energy_Data.Year,
-       Energy_Data[f"{metric}"]
+        Energy_Data.State,
+        Energy_Data.Year,
+        f"final_combine_table.{metric}"
    ]
 
-   results = db.session.query(*sel).all()
-   #print(results)
-
+   results = db.session.query(*sel).filter(Energy_Data.Year == year, Energy_Data.State != "US").order_by(f"final_combine_table.{metric} desc").all()
+   
    # Create a dictionary entry for each row of metadata information
    energy_data_list = []
 
@@ -165,7 +165,7 @@ def energy_data_metric(metric):
        energy_data = {}
        energy_data["State"] = result[0]
        energy_data["Year"] = result[1]
-       energy_data[f"{metric}"] = str(result[2])
+       energy_data[metric] = str(result[2])
 
        energy_data_list.append(energy_data)
 
