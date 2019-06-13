@@ -19,28 +19,29 @@
 <body>
     <!-- Section: Navigation -->
     <div class="navigation">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" style="background-color: darkgreen;" href="/">Home</a>
-            <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Visualizations
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="streamgraph">Stream Graphs</a>
-                        <a class="dropdown-item" href="linegraph">Line Graphs</a>
-                        <a class="dropdown-item" href="heatmap">Heat Maps</a>
-                    </div>
-                </li>
-            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" style="background-color: darkgreen;" href="/">Home</a>
+                <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="streamgraph">Stream Graphs</a>
+                            <a class="dropdown-item" href="linegraph">Line Graphs</a>
+                            <a class="dropdown-item" href="heatmaps">Heat Maps</a>
+                            <a class="dropdown-item" href="scatter">Scatter Plot</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </nav>
         </div>
-        </nav>
-    </div>
 
 <!-- Section: Content -->
 <div class="container">
@@ -49,7 +50,7 @@
     </div>
     <div class="row">
         <div class="col-lg-2 cold-md-12">
-            <!-- Left Side Box -->
+            <!-- DROPDOWN -->
             <div class="dropdown" style="padding-bottom: 30px;">
                 <h5>Select State:</h5>
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
@@ -59,47 +60,50 @@
     <div class="row">
         <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
             <div id="totalEnergyGraph"></div>
-            <!-- Right Side Box -->
         </div>
         <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
             <div id="totalRenewableEnergyGraph"></div>
-            <!-- Right Side Box -->
         </div>
         <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
             <div id="priceGraph"></div>
-            <!-- Right Side Box -->
         </div>
         <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
             <div id="emissionGraph"></div>
-            <!-- Right Side Box -->
         </div>
     </div>
     <div class="row">
         <div class="col-lg-5 col-md-12">
             <!-- Right Side Box -->
             <div class="box">
-                <h5 class="title">Visualizations</h5>
-                <hr>
-                <div class="container">
-                    <div class="row" style="padding-bottom: 30px;">
-                        <div class="col-4">
-                            <a href="heatmap">
-                                <img class="panel" src="assets/img/Heatmap.jpeg" alt="Heatmap">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="streamgraph">
-                                <img class="panel" src="assets/img/Streamgraph.png" alt="Streamgraph">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                                <a href="linegraph">
-                                    <img class="panel" src="assets/img/LineGraph.png" alt="LineGraph">
+                    <h5 class="title">Visualizations</h5>
+                    <hr>
+                    <div class="container">
+                        <div class="row" style="padding-bottom: 30px;">
+                            <div class="col-6" style="padding-bottom: 30px;">
+                                <a href="heatmap">
+                                    <img class="panel" src="static/img/Heatmap.jpeg" alt="Heatmap">
                                 </a>
+                            </div>
+                            <div class="col-6" style="padding-bottom: 30px;">
+                                <a href="streamgraph">
+                                    <img class="panel" src="static/img/Streamgraph.png" alt="Streamgraph">
+                                </a>
+                            </div>
+                            <div class="row" style="padding-bottom: 30px;">
+                            <div class="col-6">
+                                    <a href="linegraph">
+                                        <img class="panel" src="static/img/LineGraph.png" alt="LineGraph">
+                                    </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="scatter">
+                                    <img class="panel" src="static/img/LineGraph.png" alt="ScatterPlot">
+                                </a>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>
