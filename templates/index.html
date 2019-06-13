@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <!-- CSS styleSheet link -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
     <!-- Section: Navigation -->
@@ -34,7 +34,8 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="streamgraph">Stream Graphs</a>
                         <a class="dropdown-item" href="linegraph">Line Graphs</a>
-                        <a class="dropdown-item" href="heatmap">Heat Maps</a>
+                        <a class="dropdown-item" href="heatmaps">Heat Maps</a>
+                        <a class="dropdown-item" href="scatter">Scatter Plot</a>
                     </div>
                 </li>
             </ul>
@@ -53,36 +54,91 @@
             <div class="box">
                 <h3 class="h3">Summary: Overview of Energy Analysis</h3>
                 <hr>
-                <img src="assets/img/Heatmap.jpeg" class="vizualization rounded float-left" alt="Heatmap">
+                <img src="static/img/Heatmap.jpeg" class="vizualization rounded float-left" alt="Heatmap">
                 <p></p>
                 <p></p>
             </div>
         </div>
-        <div class="col-lg-5 col-md-12">
+        <div class="col-lg-5 col-md-16">
             <!-- Right Side Box -->
-            <div class="box">
+            <!-- <div class="box">
                 <h5 class="title">Visualizations</h5>
                 <hr>
                 <div class="container">
                     <div class="row" style="padding-bottom: 30px;">
-                        <div class="col-4">
+                        <div class="col-6" style="padding-bottom: 30px;">
                             <a href="heatmap">
-                                <img class="panel" src="assets/img/Heatmap.jpeg" alt="Heatmap">
+                                <img class="panel" src="static/img/Heatmap.jpeg" alt="Heatmap">
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-6" style="padding-bottom: 30px;">
                             <a href="streamgraph">
-                                <img class="panel" src="assets/img/Streamgraph.png" alt="Streamgraph">
+                                <img class="panel" src="static/img/Streamgraph.png" alt="Streamgraph">
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="row" style="padding-bottom: 30px;">
+                        <div class="col-6">
                                 <a href="linegraph">
-                                    <img class="panel" src="assets/img/LineGraph.png" alt="LineGraph">
+                                    <img class="panel" src="static/img/LineGraph.png" alt="LineGraph">
                                 </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="scatter">
+                                <img class="panel" src="static/img/LineGraph.png" alt="ScatterPlot">
+                            </a>
+                        </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+            <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="heatmap">
+                            <div class="card" style="width: 18rem;">
+                                <img src="static/img/Heatmap.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Latitude</h5>
+                                    <p class="card-text">Analyze how weather changes as you get closer to the equator.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                            <a href="streamgraph">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="static/img/Streamgraph.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Latitude</h5>
+                                        <p class="card-text">Analyze how weather changes as you get closer to the equator.</p>
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                            <a href="linegraph">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Latitude</h5>
+                                        <p class="card-text">Analyze how weather changes as you get closer to the equator.</p>
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                            <a href="scatter">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Latitude</h5>
+                                        <p class="card-text">Analyze how weather changes as you get closer to the equator.</p>
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+
         </div>
     </div>
 </div>
