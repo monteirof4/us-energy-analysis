@@ -50,6 +50,11 @@ def heatmap():
    """Heatmap chart page."""
    return render_template("heatMaps.html")
 
+@app.route("/scatter")
+def scatter():
+   """Heatmap chart page."""
+   return render_template("scatterPlot.html")
+
 
 @app.route("/states")
 def names():
@@ -151,13 +156,25 @@ def energy_data_metric(metric):
    year = 2016
 
    sel = [
+        Energy_Data.State
+   ]
+
+   states = db.session.query(*sel).filter(Energy_Data.Year == year, Energy_Data.State != "US").order_by(f"final_combine_table.{metric} desc").all()
+   
+   top5_states = []
+
+   for i in range(5):
+      top5_states.append(states[i][0])
+
+   sel = [
         Energy_Data.State,
         Energy_Data.Year,
         f"final_combine_table.{metric}"
    ]
 
-   results = db.session.query(*sel).filter(Energy_Data.Year == year, Energy_Data.State != "US").order_by(f"final_combine_table.{metric} desc").all()
-   
+   results = db.session.query(*sel).filter(Energy_Data.State.in_(top5_states)).all()
+
+
    # Create a dictionary entry for each row of metadata information
    energy_data_list = []
 
