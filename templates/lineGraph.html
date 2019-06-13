@@ -50,19 +50,27 @@
     <div class="row">
         <div class="col-lg-2 cold-md-12">
             <!-- Left Side Box -->
-            <div class="dropdown">
+            <div class="dropdown" style="padding-bottom: 30px;">
                 <h5>Select State:</h5>
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
             </div>
         </div>
-        <div class="col-lg-5 col-md-12">
-            <div id="priceGraph">
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
+            <div id="totalEnergyGraph"></div>
             <!-- Right Side Box -->
         </div>
-        <div class="col-lg-5 col-md-12">
-            <div id="emissionGraph">
-            </div>
+        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
+            <div id="totalRenewableEnergyGraph"></div>
+            <!-- Right Side Box -->
+        </div>
+        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
+            <div id="priceGraph"></div>
+            <!-- Right Side Box -->
+        </div>
+        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
+            <div id="emissionGraph"></div>
             <!-- Right Side Box -->
         </div>
     </div>
