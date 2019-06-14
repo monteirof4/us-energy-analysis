@@ -163,7 +163,7 @@ def energy_data_metric(metric):
    
    top5_states = []
 
-   for i in range(5):
+   for i in range(10):
       top5_states.append(states[i][0])
 
    sel = [
@@ -172,7 +172,7 @@ def energy_data_metric(metric):
         f"final_combine_table.{metric}"
    ]
 
-   results = db.session.query(*sel).filter(Energy_Data.State.in_(top5_states)).all()
+   results = db.session.query(*sel).filter(Energy_Data.Year == year, Energy_Data.State.in_(top5_states)).all()
 
 
    # Create a dictionary entry for each row of metadata information
