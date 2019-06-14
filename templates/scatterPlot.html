@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>US Energy & Emissions Analysis</title>
+
+    <!-- Bootstrap Styling -->
+    <!-- Link to Bootstrap - https://getbootstrap.com/docs/4.3/getting-started/download/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- CSS styleSheet link -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Section: Navigation -->
+    <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" style="background-color: darkgreen;" href="/">Home</a>
+                <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="streamgraph">Stream Graphs</a>
+                            <a class="dropdown-item" href="linegraph">Line Graphs</a>
+                            <a class="dropdown-item" href="heatmap">Heat Maps</a>
+                            <a class="dropdown-item" href="scatter">Scatter Plot</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+
+<!-- Section: Content -->
+<div class="container">
+    <div class="jumbotron text-center" style="background-image: url(https://www.dlapiper.com/~/media/images/insights/publications/2018/07/renewable_electricity_web_banner_1046584516.jpg); background-size: 100%; height: 100%;">
+        <h1 class="display-4">US Energy & Emissions Analysis</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 cold-md-12">
+            <!-- DROPDOWN -->
+            <div class="dropdown" style="padding-bottom: 30px;">
+                <h5>Select State:</h5>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
+            <div id="totalEnergyGraph"></div>
+        </div>
+        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
+            <div id="totalRenewableEnergyGraph"></div>
+        </div>
+        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
+            <div id="priceGraph"></div>
+        </div>
+        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
+            <div id="emissionGraph"></div>
+        </div>
+    </div>
+    <!-- Section: Card Links to all Other Pages -->
+    <div class="row justify-content-around mt-4">
+            <div class="col-lg-2 col-sm-6">
+                <a href="heatmap">
+                    <div class="card" style="width: 12rem;">
+                        <img src="static/img/Heatmap.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Heatmaps</h5>
+                            <p class="card-text">Analysis of Energy Data using map of US along with markers for Total CO2 Emissions or Total Energy Production.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                    <a href="streamgraph">
+                        <div class="card" style="width: 12rem;">
+                            <img src="static/img/Streamgraph.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Streamgraph</h5>
+                                <p class="card-text">Analysis of Energy Data using streamgraph to quickly compare each state based on various metrics.</p>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                    <a href="linegraph">
+                        <div class="card" style="width: 12rem;">
+                            <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Line Graphs</h5>
+                                <p class="card-text">Analysis of Energy Data using linegraphs to quickly visualize at a state level the four key energy metrics.</p>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+                    <a href="scatter">
+                        <div class="card" style="width: 12rem;">
+                            <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Scatter Plots</h5>
+                                <p class="card-text">Analysis of Energy Data using scatter plots allowing compare each state based on various metrics.</p>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+        </div> 
+    </div>
+</div>
+
+    <!-- Adding a Footer section -->
+    <footer>
+        <div class="footer">2019 RutgersCodingBootcamp - Fernando, Feng, Omar, and Mike I.</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/linegraph.js') }}"></script>
+
+</body>
+</html>

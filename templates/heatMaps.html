@@ -42,7 +42,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="streamgraph">Stream Graphs</a>
                             <a class="dropdown-item" href="linegraph">Line Graphs</a>
-                            <a class="dropdown-item" href="heatmaps">Heat Maps</a>
+                            <a class="dropdown-item" href="heatmap">Heat Maps</a>
                             <a class="dropdown-item" href="scatter">Scatter Plot</a>
                         </div>
                     </li>
@@ -65,10 +65,58 @@
 
 </div>
 
-    <!-- Adding a Footer section -->
-    <footer>
-        <div class="footer">2019 RutgersCodingBootcamp - Fernando, Feng, Omar, and Mike I.</div>
-    </footer>
+<!-- Section: Card Links to all Other Pages -->
+<div class="row justify-content-around mt-4">
+        <div class="col-lg-2 col-sm-6">
+            <a href="heatmap">
+                <div class="card" style="width: 12rem;">
+                    <img src="static/img/Heatmap.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Heatmaps</h5>
+                        <p class="card-text">Analysis of Energy Data using map of US along with markers for Total CO2 Emissions or Total Energy Production.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+                <a href="streamgraph">
+                    <div class="card" style="width: 12rem;">
+                        <img src="static/img/Streamgraph.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Streamgraph</h5>
+                            <p class="card-text">Analysis of Energy Data using streamgraph to quickly compare each state based on various metrics.</p>
+                        </div>
+                    </div>
+                </a>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+                <a href="linegraph">
+                    <div class="card" style="width: 12rem;">
+                        <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Line Graphs</h5>
+                            <p class="card-text">Analysis of Energy Data using linegraphs to quickly visualize at a state level the four key energy metrics.</p>
+                        </div>
+                    </div>
+                </a>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+                <a href="scatter">
+                    <div class="card" style="width: 12rem;">
+                        <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Scatter Plots</h5>
+                            <p class="card-text">Analysis of Energy Data using scatter plots allowing compare each state based on various metrics.</p>
+                        </div>
+                    </div>
+                </a>
+        </div>
+    </div> 
+
+<!-- Adding a Footer section -->
+<footer>
+    <div class="footer">2019 RutgersCodingBootcamp - Fernando, Feng, Omar, and Mike I.</div>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
