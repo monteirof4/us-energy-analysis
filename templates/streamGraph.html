@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <!-- CSS styleSheet link -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <!-- Section: Navigation -->
@@ -34,7 +34,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="streamgraph">Stream Graphs</a>
                             <a class="dropdown-item" href="linegraph">Line Graphs</a>
-                            <a class="dropdown-item" href="heatmaps">Heat Maps</a>
+                            <a class="dropdown-item" href="heatmap">Heat Maps</a>
                             <a class="dropdown-item" href="scatter">Scatter Plot</a>
                         </div>
                     </li>
@@ -53,40 +53,54 @@
             <!-- Left Side Box -->
             <div class="streamGraph"></div>
         </div>
-        <div class="col-lg-5 col-md-12">
-
-
-            <!-- Right Side Box -->
-            <div class="box">
-                <h5 class="title">Visualizations</h5>
-                <hr>
-                <div class="container">
-                    <div class="row" style="padding-bottom: 30px;">
-                        <div class="col-4">
-                            <a href="heatMaps">
-                                <img class="panel" src="static/img/Heatmap.jpeg" alt="Heatmap">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="streamGraph">
-                                <img class="panel" src="static/img/Streamgraph.png" alt="Streamgraph">
-                            </a>
-                        </div>
-                        <div class="col-4">
-                                <a href="lineGraph">
-                                    <img class="panel" src="static/img/LineGraph.png" alt="LineGraph">
-                                </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="scatterPlot">
-                                <img class="panel" src="static/img/LineGraph.png" alt="ScatterPlot">
-                            </a>
-                        </div>
+    </div>
+<!-- Section: Card Links to all Other Pages -->
+<div class="row justify-content-around mt-4">
+        <div class="col-lg-2 col-sm-6">
+            <a href="heatmap">
+                <div class="card" style="width: 12rem;">
+                    <img src="static/img/Heatmap.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Heatmaps</h5>
+                        <p class="card-text">Analysis of Energy Data using map of US along with markers for Total CO2 Emissions or Total Energy Production.</p>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
-    </div>
+        <div class="col-lg-2 col-sm-6">
+                <a href="streamgraph">
+                    <div class="card" style="width: 12rem;">
+                        <img src="static/img/Streamgraph.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Streamgraph</h5>
+                            <p class="card-text">Analysis of Energy Data using streamgraph to quickly compare each state based on various metrics.</p>
+                        </div>
+                    </div>
+                </a>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+                <a href="linegraph">
+                    <div class="card" style="width: 12rem;">
+                        <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Line Graphs</h5>
+                            <p class="card-text">Analysis of Energy Data using linegraphs to quickly visualize at a state level the four key energy metrics.</p>
+                        </div>
+                    </div>
+                </a>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+                <a href="scatter">
+                    <div class="card" style="width: 12rem;">
+                        <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Scatter Plots</h5>
+                            <p class="card-text">Analysis of Energy Data using scatter plots allowing compare each state based on various metrics.</p>
+                        </div>
+                    </div>
+                </a>
+        </div>
+    </div>  
 </div>
 
     <!-- Adding a Footer section -->
