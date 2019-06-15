@@ -35,14 +35,14 @@ https://www.d3-graph-gallery.com/streamgraph.html
 https://www.mapbox.com/
 
 Diagram of Process:
-- ![Diagram](assets/img/Diagram.png)
+- ![Diagram](static/img/Diagram.png)
 
 Sketch of Interface:
-- ![Sketch](assets/img/IMG_7795.JPG)
+- ![Sketch](static/img/IMG_7795.JPG)
 
 Examples of charts:
 
-- ![Line Graph](assets/img/LineGraph.png)
-- ![Heatmap](assets/img/Heatmap.jpeg)
-- ![Streamgraph](assets/img/Streamgraph.png)
+- ![Line Graph](static/img/LineGraph.png)
+- ![Heatmap](static/img/Heatmap.jpeg)
+- ![Streamgraph](static/img/Streamgraph.png)
 
