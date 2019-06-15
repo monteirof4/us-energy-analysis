@@ -39,7 +39,7 @@ Diagram of Process:
 - ![Diagram](static/img/Diagram.png)
 
 Sketch of Interface:
-- ![Sketch](static/img/initialProjectDesignSketch.jpg)
+- ![Sketch](static/img/initialProjectDesignSketch.JPG)
 
 Examples of charts:
 
