@@ -45,5 +45,5 @@ Examples of charts:
 
 - ![Line Graph](static/img/LineGraph.png)
 - ![Heatmap](static/img/Heatmap.jpeg)
-- ![Streamgraph](static/img/Streamgraph.png)
+- ![Streamgraph](static/img/barchart.png)
 
