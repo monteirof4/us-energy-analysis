@@ -13,8 +13,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
     <!-- CSS styleSheet link -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 <body>
     <!-- Section: Navigation -->
@@ -45,32 +50,19 @@
 
 <!-- Section: Content -->
 <div class="container">
+    
     <div class="jumbotron text-center" style="background-image: url(https://www.dlapiper.com/~/media/images/insights/publications/2018/07/renewable_electricity_web_banner_1046584516.jpg); background-size: 100%; height: 100%;">
         <h1 class="display-4">US Energy & Emissions Analysis</h1>
     </div>
+
     <div class="row">
-        <div class="col-lg-2 cold-md-12">
-            <!-- DROPDOWN -->
-            <div class="dropdown" style="padding-bottom: 30px;">
-                <h5>Select State:</h5>
-                <select id="selDataset" onchange="optionChanged(this.value)"></select>
-            </div>
+        <div class="col-lg-7 cold-md-12">
+            <div class="scatterMap"></div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
-            <div id="totalEnergyGraph"></div>
-        </div>
-        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
-            <div id="totalRenewableEnergyGraph"></div>
-        </div>
-        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
-            <div id="priceGraph"></div>
-        </div>
-        <div class="col-lg-6 col-md-12" style="padding-bottom: 30px;">
-            <div id="emissionGraph"></div>
-        </div>
-    </div>
+
+
+
     <!-- Section: Card Links to all Other Pages -->
     <div class="row justify-content-around mt-4">
             <div class="col-lg-2 col-sm-6">
@@ -119,6 +111,7 @@
             </div>
         </div> 
     </div>
+
 </div>
 
     <!-- Adding a Footer section -->
@@ -128,7 +121,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="{{ url_for('static', filename='js/linegraph.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scatterplot.js') }}"></script>
 
 </body>
 </html>
