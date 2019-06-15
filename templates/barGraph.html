@@ -15,7 +15,17 @@
     
     <!-- CSS styleSheet link -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- D3 styleSheet link -->
+    <script src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/d3plus.min.js') }}"></script>
+    <!-- <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+    <script src="https://d3plus.org/js/d3.js"></script>
+    <script src="https://d3plus.org/js/d3plus.js"></script>
 </head>
+
 <body>
     <!-- Section: Navigation -->
     <div class="navigation">
@@ -45,15 +55,30 @@
 
 <!-- Section: Content -->
 <div class="container">
-    <div class="jumbotron text-center" style="background-image: url(static/img/energyProjectBanner.jpg); background-size: 100%; height: 100%;">
-        <h1 class="display-4">US Energy & Emissions Analysis</h1>
+    <div class="jumbotron text-center"
+            style="background-image: url(https://www.dlapiper.com/~/media/images/insights/publications/2018/07/renewable_electricity_web_banner_1046584516.jpg); background-size: 100%; height: 100%;">
+            <h1 class="display-4">US Energy & Emissions Analysis</h1>
     </div>
-    <div class="row">
-        <div class="col-lg-7 cold-md-12">
-            <!-- Left Side Box -->
-            <div class="barGraph"></div>
+        <div class="row">
+            <div class="col-lg-2 cold-md-12">
+                <!-- DROPDOWN -->
+                <div class="dropdown" style="padding-bottom: 30px;">
+                    <h5>Select Metric:</h5>
+                    <select id="selDataset" onchange="optionChanged(this)">
+                        <option value="Total_co2_emission">Total CO2 Emissions</option>
+                        <option value="Total_renewable_energy">Total Renewable Engery</option>
+                        <option value="Average_Price">Average Price</option>
+                        <option value="Average_resident_population">Average Resident Population</option>
+                        <option value="Total_energy">Total Energy</option>
+                    </select>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12" style="padding-bottom: 30px;">
+                <div id="totalRenewableEnergyGraph"></div>
+            </div>
+        </div>
     <br>
     <hr>
 <!-- Section: Card Links to all Other Pages -->
@@ -104,7 +129,6 @@
         </div>
     </div>  
 </div>
-
     <!-- Adding a Footer section -->
     <footer>
         <div class="footer">2019 RutgersCodingBootcamp - Fernando, Feng, Omar, and Mike I.</div>
