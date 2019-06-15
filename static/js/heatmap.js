@@ -68,7 +68,7 @@ d3.json("/states").then((datastate) => {
           var colors = ["green","lightgreen","orange","red","brown"];
           var labels = [];
 
-          var legendInfo = "<p>Total Co2 Emission</p>"
+          var legendInfo = "<p2>Total Co2 Emission</p2>"
           div.innerHTML = legendInfo;
       
           limits.forEach(function(limit, index) {
@@ -148,7 +148,7 @@ d3.json("/states").then((datastate) => {
           var colors = ["lightblue","yellow","violet","blue","purple"];
           var labels = [];
 
-          var legendInfo = "<p>Total Energy Production</p>"
+          var legendInfo = "<p2>Total Energy Production</p2>"
           div.innerHTML = legendInfo;
       
           limits.forEach(function(limit, index) {
