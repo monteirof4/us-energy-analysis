@@ -20,29 +20,30 @@ Focus is going to be on building charts around the below datasets:
     - Geothermal
     - Wind
     - Solar
+
 - Resident Populations
+
 - Total CO2 Emissions All Sources
 
 Data is going to be extracted from the API, stored in a SQLite, transformed into various vissualizations, and these visualizations will be easily manipulated on the HTML pages by the user to provide various views of this data. 
 
 
-Visualizations will be built out using Ploty, Leaflet, heatmap.js, Streamgraph, and Mapbox
+Visualizations will be built out using Ploty, Leaflet, D3plus and Mapbox
 
 https://plot.ly/javascript/
 https://leafletjs.com/
-https://www.patrick-wied.at/static/heatmapjs/
-https://www.d3-graph-gallery.com/streamgraph.html
+http://d3plus.org/
 https://www.mapbox.com/
 
 Diagram of Process:
-- ![Diagram](assets/img/Diagram.png)
+- ![Diagram](static/img/Diagram.png)
 
 Sketch of Interface:
-- ![Sketch](assets/img/IMG_7795.JPG)
+- ![Sketch](static/img/initialProjectDesignSketch.jpg)
 
 Examples of charts:
 
-- ![Line Graph](assets/img/LineGraph.png)
-- ![Heatmap](assets/img/Heatmap.jpeg)
-- ![Streamgraph](assets/img/Streamgraph.png)
+- ![Line Graph](static/img/LineGraph.png)
+- ![Heatmap](static/img/Heatmap.jpeg)
+- ![Streamgraph](static/img/Streamgraph.png)
 
