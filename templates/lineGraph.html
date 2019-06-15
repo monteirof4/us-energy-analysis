@@ -19,33 +19,33 @@
 <body>
     <!-- Section: Navigation -->
     <div class="navigation">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" style="background-color: darkgreen;" href="/">Home</a>
-                <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Visualizations
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="streamgraph">Stream Graphs</a>
-                            <a class="dropdown-item" href="linegraph">Line Graphs</a>
-                            <a class="dropdown-item" href="heatmap">Heat Maps</a>
-                            <a class="dropdown-item" href="scatter">Scatter Plot</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" style="background-color: darkgreen;" href="/">Home</a>
+            <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Visualizations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="bargraph">Bar Graphs</a>
+                        <a class="dropdown-item" href="linegraph">Line Graphs</a>
+                        <a class="dropdown-item" href="heatmap">Heat Map</a>
+                        <a class="dropdown-item" href="scatter">Scatter Plot</a>
+                    </div>
+                </li>
+            </ul>
         </div>
+        </nav>
+    </div>
 
 <!-- Section: Content -->
 <div class="container">
-    <div class="jumbotron text-center" style="background-image: url(https://www.dlapiper.com/~/media/images/insights/publications/2018/07/renewable_electricity_web_banner_1046584516.jpg); background-size: 100%; height: 100%;">
+    <div class="jumbotron text-center" style="background-image: url(static/img/energyProjectBanner.jpg); background-size: 100%; height: 100%;">
         <h1 class="display-4">US Energy & Emissions Analysis</h1>
     </div>
     <div class="row">
@@ -71,53 +71,55 @@
             <div id="emissionGraph"></div>
         </div>
     </div>
-    <!-- Section: Card Links to all Other Pages -->
-    <div class="row justify-content-around mt-4">
-            <div class="col-lg-2 col-sm-6">
-                <a href="heatmap">
-                    <div class="card" style="width: 12rem;">
-                        <img src="static/img/Heatmap.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Heatmaps</h5>
-                            <p class="card-text">Analysis of Energy Data using map of US along with markers for Total CO2 Emissions or Total Energy Production.</p>
-                        </div>
+    <br>
+    <hr>
+<!-- Section: Card Links to all Other Pages -->
+<div class="row justify-content-around mt-4">
+    <div class="col-lg-2 col-sm-6">
+        <a href="heatmap">
+            <div class="card" style="width: 12rem;">
+                <img src="static/img/Heatmap.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Heat Maps</h5>
+                    <p class="card-text">Analysis of Energy Data using map of US along with markers for Total CO2 Emissions or Total Energy Production.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-2 col-sm-6">
+            <a href="bargraph">
+                <div class="card" style="width: 12rem;">
+                    <img src="static/img/Streamgraph.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bar Graphs</h5>
+                        <p class="card-text">Analysis of Energy Data using streamgraph to quickly compare each state based on various metrics.</p>
                     </div>
-                </a>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-                    <a href="streamgraph">
-                        <div class="card" style="width: 12rem;">
-                            <img src="static/img/Streamgraph.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Streamgraph</h5>
-                                <p class="card-text">Analysis of Energy Data using streamgraph to quickly compare each state based on various metrics.</p>
-                            </div>
-                        </div>
-                    </a>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-                    <a href="linegraph">
-                        <div class="card" style="width: 12rem;">
-                            <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Line Graphs</h5>
-                                <p class="card-text">Analysis of Energy Data using linegraphs to quickly visualize at a state level the four key energy metrics.</p>
-                            </div>
-                        </div>
-                    </a>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-                    <a href="scatter">
-                        <div class="card" style="width: 12rem;">
-                            <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Scatter Plots</h5>
-                                <p class="card-text">Analysis of Energy Data using scatter plots allowing compare each state based on various metrics.</p>
-                            </div>
-                        </div>
-                    </a>
-            </div>
-        </div> 
+                </div>
+            </a>
+    </div>
+    <div class="col-lg-2 col-sm-6">
+            <a href="linegraph">
+                <div class="card" style="width: 12rem;">
+                    <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Line Graphs</h5>
+                        <p class="card-text">Analysis of Energy Data using linegraphs to quickly visualize at a state level the four key energy metrics.</p>
+                    </div>
+                </div>
+            </a>
+    </div>
+    <div class="col-lg-2 col-sm-6">
+            <a href="scatter">
+                <div class="card" style="width: 12rem;">
+                    <img src="static/img/LineGraph.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Scatter Plots</h5>
+                        <p class="card-text">Analysis of Energy Data using scatter plots allowing compare each state based on various metrics.</p>
+                    </div>
+                </div>
+            </a>
+    </div>
+</div> 
     </div>
 </div>
 

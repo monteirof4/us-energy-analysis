@@ -40,10 +40,10 @@ def linegraph():
    """Line chart page."""
    return render_template("lineGraph.html")
 
-@app.route("/streamgraph")
+@app.route("/bargraph")
 def streamgraph():
-   """Stream chart page."""
-   return render_template("streamGraph.html")
+   """Bar graph page."""
+   return render_template("barGraph.html")
 
 @app.route("/heatmap")
 def heatmap():
