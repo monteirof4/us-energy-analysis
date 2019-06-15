@@ -107,7 +107,7 @@ min-height: 55px;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 15px; 
 text-align: center; 
-position: fixed;
+/* position: fixed; */
 left: 0;
 bottom: 0;
 width: 100%;
