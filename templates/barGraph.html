@@ -17,13 +17,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     <!-- D3 styleSheet link -->
-    <script src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/d3plus.min.js') }}"></script>
-    <!-- <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
     <script src="https://d3plus.org/js/d3.js"></script>
     <script src="https://d3plus.org/js/d3plus.js"></script>
+    
 </head>
 
 <body>
@@ -39,7 +35,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Visualizations
+                            aria-haspopup="true" aria-expanded="false" style="color: white; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Visualizations
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="bargraph">Bar Graphs</a>
@@ -66,7 +62,7 @@
                     <h5>Select Metric:</h5>
                     <select id="selDataset" onchange="optionChanged(this)">
                         <option value="Total_co2_emission">Total CO2 Emissions</option>
-                        <option value="Total_renewable_energy">Total Renewable Engery</option>
+                        <option value="Total_renewable_energy">Total Renewable Energy</option>
                         <option value="Average_Price">Average Price</option>
                         <option value="Average_resident_population">Average Resident Population</option>
                         <option value="Total_energy">Total Energy</option>
@@ -134,5 +130,6 @@
         <div class="footer">2019 RutgersCodingBootcamp - Fernando, Feng, Omar, and Mike I.</div>
     </footer>
 
+    <script src="{{ url_for('static', filename='js/bargraph.js') }}"></script>
 </body>
 </html>
