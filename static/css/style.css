@@ -1,6 +1,6 @@
 /* Body */
 body{
-    background-color: whitesmoke; 
+    background-color: darkgreen; 
 }
 /* Navbar */
 .navbar{
@@ -15,24 +15,26 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .navbar{
-    background-color: white; 
-    font-size: 15px; 
+    background-color: darkgreen; 
+    font-size: 20px; 
 }
+
 .active, .dropdown-menu .dropdown-item:active a:hover{
     background-color:white!important; 
 }
 .dropdown-item{
-    color: grey !important; 
+    color: white !important; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
     background-color:white !important; 
 }
 a{
-    color: grey;
-    font-size: 15px; 
+    color: white;
+    font-size: 20px; 
 }
 .nav-link:hover{
-    background-color:white !important;
+    background-color:darkgreen !important;
 }
 .navbar-brand:hover{
 color: rgb(175, 175, 175) !important;
@@ -66,19 +68,29 @@ img{
 }
 /* Paragraph Element */
 p{
- color: gray;
+ color: whitesmoke;
  font-family: Arial, Helvetica, sans-serif;
- font-size: 17px; 
+ font-size: 20px; 
 }
+
+/* Unordered List Elements */
+ul{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+   }
 /* Box Class */
 .box {
     margin-top: 60px; 
     margin-bottom: 62px; 
     padding: 10px 20px 15px; 
-    color:black;
-    background-color: white; 
+    color:whitesmoke;
+    background-color: lightslategray; 
 
   }
+.card{
+    background-color: lightslategray;   
+}
 /* Table */
 .table{
     font-size: 15px; 
@@ -107,7 +119,7 @@ padding-top: 15px;
 }
 .navbar div{
     margin: inherit; 
-    background-color: white;  
+    background-color: darkgreen;  
 }
 .navbar-brand{
     padding: 10px !important; 
